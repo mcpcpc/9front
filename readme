@@ -1,7 +1,7 @@
 9front tips
 ===========
 
-mount 9fat
+mount 9fat (from a remote cpu)
   bind -b '#S' /dev
   9fs 9fat
   
