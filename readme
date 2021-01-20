@@ -1,0 +1,12 @@
+9front tips
+===========
+
+mount 9fat
+  bind -b '#S' /dev
+  9fs 9fat
+  
+reboot
+  fshalt -r
+  
+send file to pastebin
+  cat file | webpaste
