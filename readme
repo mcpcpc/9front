@@ -10,3 +10,6 @@ reboot
   
 send file to pastebin
   cat file | webpaste
+
+convert jpg to plan9 format
+  jpg -9t wall.jpg > wall
