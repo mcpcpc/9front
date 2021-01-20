@@ -1,0 +1,7 @@
+#!/bin/rc
+window 0,0,161,117 stats -lm
+window 161,0,560,117 faces -i
+window -miny 130
+
+# run a system shell on the serial console
+~ $#console 0 || window -scroll console
