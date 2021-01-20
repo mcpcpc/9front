@@ -13,3 +13,15 @@ send file to pastebin
 
 convert jpg to plan9 format
   jpg -9t wall.jpg > wall
+
+add background image support
+  cd /sys/src/cmd/rio/
+  hget https://raw.githubusercontent.com/mcpcpc/9front-rpi4-scripts/main/data.c.patch
+  patch data.c.patch
+  mk install
+  mk clean
+
+using the patched data.c for background images
+  # remember to convert the *.jpg to plan9 format
+  cd /path/to/wall
+  cat wall | rio -i riostart
