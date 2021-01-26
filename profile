@@ -2,7 +2,7 @@ bind -a $home/bin/rc /bin
 bind -a $home/bin/$cputype /bin
 if(! syscall create /tmp/xxx 1 0666 >[2]/dev/null)
 	ramfs	# in case we're running off a cd
-font=/lib/font/bit/hack/R.12.font
+font=/lib/font/bit/dejavusans/dajavusans.12.font
 switch($service){
 case terminal
 	if(! webcookies >[2]/dev/null)
