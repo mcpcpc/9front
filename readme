@@ -35,3 +35,4 @@ install hack fonts
 	hget http://9front.org/extra/font.hack.tgz > /tmp/font.hack.tgz
 	cd /lib/font/bit
 	gunzip < /tmp/font.hack.tgz | tar xv
+	rm /tmp/font.hack.tgz
